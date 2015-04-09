@@ -29,6 +29,7 @@ class AboutRegularExpressions < Neo::Koan
     assert_equal "abb", "abbcccddddeeeee"[/ab*/]
     assert_equal "a", "abbcccddddeeeee"[/az*/]
     assert_equal "", "abbcccddddeeeee"[/z*/]
+    assert_equal nil, "abbcccddddeeeee"[/z+/]
 
     # THINK ABOUT IT:
     #
